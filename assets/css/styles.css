@@ -132,10 +132,9 @@ h1, h2, h3, h4 {
 
 /* Programmation */
 
-@media (max-width: 400px) {
-  .movies-tabs {
-    font-size: calc(0.9rem + .7vw)!important;
-  }
+#prog-heading {
+  background: var(--bs-dark-3);
+  margin: 0px;
 }
 
 .movies-tabs {
@@ -178,24 +177,19 @@ p.synopsis {
   margin-bottom: 5px;
 }
 
+@media (max-width: 400px) {
+  .movies-tabs {
+    font-size: calc(0.9rem + .7vw)!important;
+  }
+}
+
 @media (max-width: 500px) {
   .synopsis {
     font-size: 0.89rem !important;
   }
 }
 
-#prog-heading {
-  background: var(--bs-dark-3);
-  margin: 0px;
-}
-
 /* Reservation */
-
-@media (max-width: 992px) {
-  #reservation {
-    margin-top: 20px;
-  }
-}
 
 #reservation-form {
   margin: auto;
@@ -206,15 +200,21 @@ p.synopsis {
   font-size: 17px;
 }
 
-@media (min-width: 768px) {
-  #reservation-form {
-    width: 600px;
+@media (max-width: 992px) {
+  #reservation {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 400px) {
   #reservation-form label {
     font-size: 0.95rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #reservation-form {
+    width: 600px;
   }
 }
 
